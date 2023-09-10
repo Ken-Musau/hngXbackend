@@ -3,7 +3,7 @@ class ApiController < ApplicationController
     slack_name = params[:slack_name]
     track = params[:track]
     current_day = Time.now.strftime("%A")
-    utc_time = Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+    utc_time = Time.now.utc.strftime("%Y-%m-%dT%H:%M:%S.%LZ")
     github_file_url = "https://github.com/Ken-Musau/hngXbackend/blob/main/app/controllers/api_controller.rb"
     github_repo_url = "https://github.com/Ken-Musau/hngXbackend"
     status_code = 200
